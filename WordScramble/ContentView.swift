@@ -15,6 +15,8 @@ struct ContentView: View {
     
     @State private var totalScore = 0
     
+    @FocusState private var wordEntryIsFocused: Bool
+    
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
@@ -29,6 +31,10 @@ struct ContentView: View {
                         .onSubmit {
                             addNewWord()
                         }
+                        .keyboardType(.alphabet)
+                        .disableAutocorrection(true)
+                        .focused($wordEntryIsFocused)
+                        
                 }
                 
                 Section{
@@ -52,6 +58,12 @@ struct ContentView: View {
                         resetGame()
                     }
                 }
+                ToolbarItemGroup(placement: .keyboard){
+                    Spacer()
+                    Button("Done"){
+                        wordEntryIsFocused = false
+                    }
+                }
             }
         }
         .onAppear(perform: startGame)
@@ -66,7 +78,7 @@ struct ContentView: View {
         
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
-        guard answer.count > 3 else {
+        guard answer.count >= 3 else {
             wordError(title: "Word too short", message: "Enter a longer word.")
             return
         }
