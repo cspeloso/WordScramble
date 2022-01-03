@@ -11,6 +11,8 @@
 		83DE1A4C27837310008E589D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE1A4B27837310008E589D /* ContentView.swift */; };
 		83DE1A4E27837310008E589D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DE1A4D27837310008E589D /* Assets.xcassets */; };
 		83DE1A5127837310008E589D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DE1A5027837310008E589D /* Preview Assets.xcassets */; };
+		83DE1A5827837745008E589D /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DE1A5727837745008E589D /* Lists.swift */; };
+		83DE1A5A278383E2008E589D /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83DE1A59278383E2008E589D /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		83DE1A4B27837310008E589D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83DE1A4D27837310008E589D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83DE1A5027837310008E589D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83DE1A5727837745008E589D /* Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lists.swift; sourceTree = "<group>"; };
+		83DE1A59278383E2008E589D /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				83DE1A4927837310008E589D /* WordScrambleApp.swift */,
 				83DE1A4B27837310008E589D /* ContentView.swift */,
+				83DE1A59278383E2008E589D /* start.txt */,
+				83DE1A5727837745008E589D /* Lists.swift */,
 				83DE1A4D27837310008E589D /* Assets.xcassets */,
 				83DE1A4F27837310008E589D /* Preview Content */,
 			);
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83DE1A5127837310008E589D /* Preview Assets.xcassets in Resources */,
+				83DE1A5A278383E2008E589D /* start.txt in Resources */,
 				83DE1A4E27837310008E589D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			files = (
 				83DE1A4C27837310008E589D /* ContentView.swift in Sources */,
 				83DE1A4A27837310008E589D /* WordScrambleApp.swift in Sources */,
+				83DE1A5827837745008E589D /* Lists.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
